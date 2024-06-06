@@ -1,3 +1,7 @@
+import java.util.Stack;
+
+import Ejercicio_01_sign.SignValidator;
+import Ejercicio_02_sorting.StackSorter;
 import Materia.Cola.Cola;
 import Materia.Cola.ColaGenerica;
 import Materia.Models.Pantalla;
@@ -73,6 +77,26 @@ public class App {
         System.out.println("Estoy en la pantalla:\t"+queueGenerica.peek().getNombre());
         System.out.println("Tamaño: " + queueGenerica.getSize());
 
-  
+        //Output Valiación
+        SignValidator validator = new SignValidator();
+        System.out.println(validator.isValid("([]){}")); //True
+        System.out.println(validator.isValid("({)}"));   //False
+
+        //Output Ordenamiento 
+        StackSorter sorter = new StackSorter();
+
+        // Nuevo stack 
+        Stack<Integer> stack = new Stack<>();
+        stack.push(5);
+        stack.push(1);
+        stack.push(4);
+        stack.push(7);
+        stack.push(10);
+        stack.push(1);
+
+        //Muestra el stack original, lo ordena, y muestra el stack ordenado
+        System.out.println("Stack original: " + stack); 
+        sorter.sortStack(stack);
+        System.out.println("Stack ordenado: " + stack);
     }
 }

@@ -3,7 +3,6 @@ import java.util.NoSuchElementException;
 import Materia.Models.NodoGenerico;
 
 public class ColaGenerica<T> {
-
     private NodoGenerico <T> first;
     private NodoGenerico <T> last;
     private int size;
@@ -11,8 +10,6 @@ public class ColaGenerica<T> {
     public ColaGenerica(){
         this.size = 0;
     }
-
-
     public void addNode (T data){
         NodoGenerico<T> nuevoNodo = new NodoGenerico<>(data);
         if (isEmpty()) {
@@ -53,12 +50,7 @@ public class ColaGenerica<T> {
         public int getSize(){
             return size;
 
-
-
-
-       
-        }
-        
+        }     
     }
     
 
