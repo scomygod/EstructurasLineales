@@ -1,8 +1,6 @@
-<<<<<<< HEAD
+
 Author: Adrian Lazo Cabrera
 
-versión: 2.0.2
+versión: 2.0.3
 =======
-Version de TAG: v2.0.1 
-"Estructura datos Lineas - Pilas" 
->>>>>>> f6e4ddb0af27361a234ba29451c53893df44b257
+Version: 2.0.3  Estructuras Lineales – Ejercicios LinkedList.
